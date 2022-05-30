@@ -68,8 +68,8 @@ async def main() -> None:
     await close_awning_if_unsafe_wind(username,
                                       password,
                                       spa_awning_url,
-                                      unsafe_wind_speed=6,
-                                      unsafe_wind_gust_speed=9)
+                                      unsafe_wind_speed=float(os.environ["UNSAFE_WIND_SPEED"]),
+                                      unsafe_wind_gust_speed=float(os.environ["UNSAFE_WIND_GUST_SPEED"]))
 
 
 asyncio.run(main())
