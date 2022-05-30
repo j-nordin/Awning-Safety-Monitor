@@ -1,3 +1,4 @@
+from pprint import pprint
 from typing import cast
 
 from pyoverkiz.client import OverkizClient
@@ -32,6 +33,9 @@ class OverkizClientExtension(OverkizClient):
                                    notification_text: str | None = None,
                                    notification_title: str | None = None,
                                    notification_condition: str | None = None,
+                                   target_email_adresses : list[str] | None = None,
+                                   target_phone_numbers: list[str] | None = None,
+                                   target_push_subscriptions: list[str] | None = None,
                                    label: str = "python-overkiz-api-raw-command",
                                    execution_mode: str = None
                                    ) -> str:
@@ -47,6 +51,7 @@ class OverkizClientExtension(OverkizClient):
             'notificationText': notification_text if should_notify is not None else None,
             'notificationTitle': notification_title if should_notify is not None else None,
             'notificationCondition': notification_condition if should_notify is not None else None,
+            'targetPushSubscriptions': target_push_subscriptions if target_push_subscriptions is not None else None,
             'actions': [{'deviceURL': device_url, 'commands': commands}]
         }
 
