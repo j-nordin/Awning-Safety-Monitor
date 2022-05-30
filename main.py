@@ -14,11 +14,11 @@ def load_env_variables():
     load_dotenv(dotenv_file)
 
 
-async def close_spa_awning(username,
-                           password,
-                           spa_awning_url,
-                           unsafe_wind_speed,
-                           unsafe_wind_gust_speed):
+async def close_awning_if_unsafe_wind(username,
+                                      password,
+                                      spa_awning_url,
+                                      unsafe_wind_speed,
+                                      unsafe_wind_gust_speed):
     async with OverkizClientExtension(username, password, server=SUPPORTED_SERVERS["somfy_europe"]) as client:
         try:
             await client.login()
@@ -26,22 +26,16 @@ async def close_spa_awning(username,
             print(exception)
             return
 
-        devices = await client.get_devices()
-
-        for device in devices:
-            if device.device_url == spa_awning_url:
-                print(f"{device.label} - {device.controllable_name}")
-                for s in device.states:
-                    print(s)
-                print(device.device_url)
-                for c in device.definition.commands:
-                    print(c)
-                print(device.type)
-                print("----")
+        # await client.refresh_states()
+        awning_states = await client.get_state(spa_awning_url)
+        for s in awning_states:
+            if s.name == 'core:OpenClosedState':
+                awning_is_open = s.value != 'closed'
 
         current_wind = WindFetcher.fetch_current_wind()
 
-        if current_wind['wind_speed'] > unsafe_wind_speed or current_wind['wind_gust_speed'] > unsafe_wind_gust_speed:
+        if (current_wind['wind_speed'] > unsafe_wind_speed or
+            current_wind['wind_gust_speed'] > unsafe_wind_gust_speed) and awning_is_open:
             try:
                 res = await client.execute_raw_commands(device_url=spa_awning_url,
                                                         commands=[Command("close")],
@@ -71,11 +65,11 @@ async def main() -> None:
     password = os.environ["PASSWORD"]
     spa_awning_url = os.environ["SPA_AWNING_ID"]
 
-    await close_spa_awning(username,
-                           password,
-                           spa_awning_url,
-                           unsafe_wind_speed=6,
-                           unsafe_wind_gust_speed=9)
+    await close_awning_if_unsafe_wind(username,
+                                      password,
+                                      spa_awning_url,
+                                      unsafe_wind_speed=6,
+                                      unsafe_wind_gust_speed=9)
 
 
 asyncio.run(main())
