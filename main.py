@@ -3,6 +3,8 @@ import os
 from dotenv import load_dotenv
 from pyoverkiz.const import SUPPORTED_SERVERS
 from pyoverkiz.models import Command
+
+import PushNotifications
 import WindFetcher
 from OverkizExtensions import OverkizClientExtension
 
@@ -27,12 +29,15 @@ async def close_spa_awning(username,
         devices = await client.get_devices()
 
         for device in devices:
-            print(f"{device.label} - {device.controllable_name}")
-            print(device.device_url)
-            for c in device.definition.commands:
-                print(c)
-            print(device.type)
-            print("----")
+            if device.device_url == spa_awning_url:
+                print(f"{device.label} - {device.controllable_name}")
+                for s in device.states:
+                    print(s)
+                print(device.device_url)
+                for c in device.definition.commands:
+                    print(c)
+                print(device.type)
+                print("----")
 
         current_wind = WindFetcher.fetch_current_wind()
 
@@ -46,6 +51,9 @@ async def close_spa_awning(username,
                                                         notification_title='Closing spa awning',
                                                         execution_mode='highPriority')
                 print(res)
+                PushNotifications.send_push_notification(title="Markis fälls in",
+                                                         message=f"Markisen fälls in på grund av hård vind. Nuvarande vind: "
+                                                                 f"{current_wind['wind_speed']} m/s ({current_wind['wind_gust_speed']} m/s)")
             except Exception as e:
                 print(e)
         else:
