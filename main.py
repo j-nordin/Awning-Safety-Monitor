@@ -71,5 +71,5 @@ async def main() -> None:
                                       unsafe_wind_speed=float(os.environ["UNSAFE_WIND_SPEED"]),
                                       unsafe_wind_gust_speed=float(os.environ["UNSAFE_WIND_GUST_SPEED"]))
 
-
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())
