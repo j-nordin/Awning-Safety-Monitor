@@ -9,4 +9,4 @@ def send_push_notification(title: str, message: str):
         "title": title,
         "message": message
     })
-
+    return r.json()
