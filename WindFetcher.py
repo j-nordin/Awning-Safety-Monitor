@@ -9,8 +9,10 @@ BASE_URL = "https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version
 
 def fetch_current_wind(lon=LON, lat=LAT):
     wind_speed, wind_gust_speed = None, None
-    res = requests.get(BASE_URL + f"lon/{lon}/lat/{lat}/data.json").json()
-    forecasts_hourly = [forecast for forecast in res['timeSeries']]
+    res = requests.get(BASE_URL + f"lon/{lon}/lat/{lat}/data.json")
+    res.raise_for_status()
+
+    forecasts_hourly = [forecast for forecast in res.json()['timeSeries']]
 
     now = datetime.now().time()
     closest_forecast_hour = now.hour if now.minute < 30 else now.hour + 1
