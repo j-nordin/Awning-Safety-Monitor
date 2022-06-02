@@ -33,9 +33,6 @@ class OverkizClientExtension(OverkizClient):
                                    notification_text: str | None = None,
                                    notification_title: str | None = None,
                                    notification_condition: str | None = None,
-                                   target_email_adresses : list[str] | None = None,
-                                   target_phone_numbers: list[str] | None = None,
-                                   target_push_subscriptions: list[str] | None = None,
                                    label: str = "python-overkiz-api-raw-command",
                                    execution_mode: str = None
                                    ) -> str:
@@ -47,13 +44,14 @@ class OverkizClientExtension(OverkizClient):
 
         payload = {
             'label': label,
-            'notificationTypeMask': notification_type_mask if should_notify is not None else None,
-            'notificationText': notification_text if should_notify is not None else None,
-            'notificationTitle': notification_title if should_notify is not None else None,
-            'notificationCondition': notification_condition if should_notify is not None else None,
-            'targetPushSubscriptions': target_push_subscriptions if target_push_subscriptions is not None else None,
             'actions': [{'deviceURL': device_url, 'commands': commands}]
         }
+
+        if should_notify:
+            payload['notificationTypeMask'] = notification_type_mask
+            payload['notificationText'] = notification_text
+            payload['notificationTitle'] = notification_title
+            payload['notificationCondition'] = notification_condition
 
         # use parent post method
         response: dict = await self._OverkizClient__post(
