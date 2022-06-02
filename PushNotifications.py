@@ -9,4 +9,7 @@ def send_push_notification(title: str, message: str):
         "title": title,
         "message": message
     })
+
+    if r.json()['status'] != 1:
+        raise Exception(f"Could not send notification, response: {r.json()}")
     return r.json()
