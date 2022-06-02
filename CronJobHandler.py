@@ -7,8 +7,7 @@ def set_check_interval_to_15_min(command: str):
     cron = CronTab(user=True)
     cron.remove_all(comment='awning')
     job = cron.new(command=command, comment="awning")
-    # TODO: Change to 15 min
-    job.minute.every(1)
+    job.minute.every(15)
     cron.write()
 
 
