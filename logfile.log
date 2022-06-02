@@ -1,0 +1,195 @@
+2022-06-02 14:22:01 - INFO - Logging in to somfy...
+2022-06-02 14:22:02 - INFO - Login successful
+2022-06-02 14:22:02 - INFO - Checking awning current state...
+2022-06-02 14:22:02 - INFO - Awning is currently: closed
+2022-06-02 14:22:02 - INFO - Checking current weather conditions...
+2022-06-02 14:22:02 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:22:02 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:22:26 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:22:26 - INFO - Logging in to somfy...
+2022-06-02 14:22:28 - INFO - Login successful
+2022-06-02 14:22:28 - INFO - Checking awning current state...
+2022-06-02 14:22:28 - INFO - Awning is currently: closed
+2022-06-02 14:22:28 - INFO - Checking current weather conditions...
+2022-06-02 14:22:28 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:22:28 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:23:01 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:23:01 - INFO - Logging in to somfy...
+2022-06-02 14:23:02 - INFO - Login successful
+2022-06-02 14:23:02 - INFO - Checking awning current state...
+2022-06-02 14:23:02 - INFO - Awning is currently: closed
+2022-06-02 14:23:02 - INFO - Checking current weather conditions...
+2022-06-02 14:23:02 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:23:02 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:24:01 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:24:01 - INFO - Logging in to somfy...
+2022-06-02 14:24:02 - INFO - Login successful
+2022-06-02 14:24:02 - INFO - Checking awning current state...
+2022-06-02 14:24:02 - INFO - Awning is currently: closed
+2022-06-02 14:24:02 - INFO - Checking current weather conditions...
+2022-06-02 14:24:02 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:24:02 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:25:01 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:25:01 - INFO - Logging in to somfy...
+2022-06-02 14:25:02 - INFO - Login successful
+2022-06-02 14:25:02 - INFO - Checking awning current state...
+2022-06-02 14:25:02 - INFO - Awning is currently: closed
+2022-06-02 14:25:02 - INFO - Checking current weather conditions...
+2022-06-02 14:25:02 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:25:02 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:26:02 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:26:02 - INFO - Logging in to somfy...
+2022-06-02 14:26:03 - INFO - Login successful
+2022-06-02 14:26:03 - INFO - Checking awning current state...
+2022-06-02 14:26:03 - INFO - Awning is currently: closed
+2022-06-02 14:26:03 - INFO - Checking current weather conditions...
+2022-06-02 14:26:03 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:26:03 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:27:02 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:27:02 - INFO - Logging in to somfy...
+2022-06-02 14:27:02 - INFO - Login successful
+2022-06-02 14:27:02 - INFO - Checking awning current state...
+2022-06-02 14:27:02 - INFO - Awning is currently: closed
+2022-06-02 14:27:02 - INFO - Checking current weather conditions...
+2022-06-02 14:27:03 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:27:03 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:28:01 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:28:01 - INFO - Logging in to somfy...
+2022-06-02 14:28:02 - INFO - Login successful
+2022-06-02 14:28:02 - INFO - Checking awning current state...
+2022-06-02 14:28:02 - INFO - Awning is currently: closed
+2022-06-02 14:28:02 - INFO - Checking current weather conditions...
+2022-06-02 14:28:03 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:28:03 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:29:01 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:29:01 - INFO - Logging in to somfy...
+2022-06-02 14:29:02 - INFO - Login successful
+2022-06-02 14:29:02 - INFO - Checking awning current state...
+2022-06-02 14:29:02 - INFO - Awning is currently: closed
+2022-06-02 14:29:02 - INFO - Checking current weather conditions...
+2022-06-02 14:29:02 - INFO - Current weather conditions: {'wind_speed': 8.2, 'wind_gust_speed': 12.3}
+2022-06-02 14:29:02 - INFO - Did not close awning, wind is {'wind_speed': 8.2, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:30:02 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:30:02 - INFO - Logging in to somfy...
+2022-06-02 14:30:03 - INFO - Login successful
+2022-06-02 14:30:03 - INFO - Checking awning current state...
+2022-06-02 14:30:03 - INFO - Awning is currently: closed
+2022-06-02 14:30:03 - INFO - Checking current weather conditions...
+2022-06-02 14:30:03 - INFO - Current weather conditions: {'wind_speed': 8.0, 'wind_gust_speed': 12.3}
+2022-06-02 14:30:03 - INFO - Did not close awning, wind is {'wind_speed': 8.0, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:31:01 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:31:01 - INFO - Logging in to somfy...
+2022-06-02 14:31:02 - INFO - Login successful
+2022-06-02 14:31:02 - INFO - Checking awning current state...
+2022-06-02 14:31:02 - INFO - Awning is currently: closed
+2022-06-02 14:31:02 - INFO - Checking current weather conditions...
+2022-06-02 14:31:02 - INFO - Current weather conditions: {'wind_speed': 8.0, 'wind_gust_speed': 12.3}
+2022-06-02 14:31:02 - INFO - Did not close awning, wind is {'wind_speed': 8.0, 'wind_gust_speed': 12.3} and state of the awning is: closed
+2022-06-02 14:31:10 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:31:10 - INFO - Logging in to somfy...
+2022-06-02 14:31:11 - ERROR - Client could not log in
+Traceback (most recent call last):
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/main.py", line 28, in close_awning_if_unsafe_wind
+    await client.login()
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/pyoverkiz/client.py", line 167, in login
+    await self.somfy_tahoma_get_access_token()
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/pyoverkiz/client.py", line 222, in somfy_tahoma_get_access_token
+    raise SomfyBadCredentialsException(token["message"])
+pyoverkiz.exceptions.SomfyBadCredentialsException: error.invalid.grant
+2022-06-02 14:31:11 - INFO - Checking awning current state...
+2022-06-02 14:31:11 - INFO - Backing off get_state(...) for 0.7s (pyoverkiz.exceptions.NotAuthenticatedException: Not authenticated)
+2022-06-02 14:31:12 - ERROR - Awning-state could not be checked
+Traceback (most recent call last):
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/backoff/_async.py", line 133, in retry
+    ret = await target(*args, **kwargs)
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/pyoverkiz/client.py", line 500, in get_state
+    response = await self.__get(
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/pyoverkiz/client.py", line 747, in __get
+    await self.check_response(response)
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/pyoverkiz/client.py", line 810, in check_response
+    raise NotAuthenticatedException(message)
+pyoverkiz.exceptions.NotAuthenticatedException: Not authenticated
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/main.py", line 36, in close_awning_if_unsafe_wind
+    awning_states = await client.get_state(spa_awning_url)
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/backoff/_async.py", line 150, in retry
+    await _call_handlers(on_backoff, *details, wait=seconds)
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/backoff/_async.py", line 34, in _call_handlers
+    await hdlr(details)
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/pyoverkiz/client.py", line 74, in relogin
+    await invocation["args"][0].login()
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/pyoverkiz/client.py", line 167, in login
+    await self.somfy_tahoma_get_access_token()
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/venv/lib/python3.10/site-packages/pyoverkiz/client.py", line 222, in somfy_tahoma_get_access_token
+    raise SomfyBadCredentialsException(token["message"])
+pyoverkiz.exceptions.SomfyBadCredentialsException: error.invalid.grant
+2022-06-02 14:31:12 - INFO - Checking current weather conditions...
+2022-06-02 14:31:12 - INFO - Current weather conditions: {'wind_speed': 8.0, 'wind_gust_speed': 12.3}
+2022-06-02 14:31:12 - ERROR - Something while checking the awning went wrong
+Traceback (most recent call last):
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/main.py", line 81, in main
+    await close_awning_if_unsafe_wind(username,
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/main.py", line 49, in close_awning_if_unsafe_wind
+    current_wind['wind_gust_speed'] > unsafe_wind_gust_speed) and awning_is_open:
+UnboundLocalError: local variable 'awning_is_open' referenced before assignment
+2022-06-02 14:32:01 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:32:01 - INFO - Logging in to somfy...
+2022-06-02 14:32:02 - ERROR - Client could not log in
+Traceback (most recent call last):
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/main.py", line 28, in close_awning_if_unsafe_wind
+    await client.login()
+  File "/home/jonas/.local/lib/python3.10/site-packages/pyoverkiz/client.py", line 167, in login
+    await self.somfy_tahoma_get_access_token()
+  File "/home/jonas/.local/lib/python3.10/site-packages/pyoverkiz/client.py", line 222, in somfy_tahoma_get_access_token
+    raise SomfyBadCredentialsException(token["message"])
+pyoverkiz.exceptions.SomfyBadCredentialsException: error.invalid.grant
+2022-06-02 14:32:02 - INFO - Checking awning current state...
+2022-06-02 14:32:02 - INFO - Backing off get_state(...) for 0.1s (pyoverkiz.exceptions.NotAuthenticatedException: Not authenticated)
+2022-06-02 14:32:03 - ERROR - Awning-state could not be checked
+Traceback (most recent call last):
+  File "/home/jonas/.local/lib/python3.10/site-packages/backoff/_async.py", line 133, in retry
+    ret = await target(*args, **kwargs)
+  File "/home/jonas/.local/lib/python3.10/site-packages/pyoverkiz/client.py", line 500, in get_state
+    response = await self.__get(
+  File "/home/jonas/.local/lib/python3.10/site-packages/pyoverkiz/client.py", line 747, in __get
+    await self.check_response(response)
+  File "/home/jonas/.local/lib/python3.10/site-packages/pyoverkiz/client.py", line 810, in check_response
+    raise NotAuthenticatedException(message)
+pyoverkiz.exceptions.NotAuthenticatedException: Not authenticated
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/main.py", line 36, in close_awning_if_unsafe_wind
+    awning_states = await client.get_state(spa_awning_url)
+  File "/home/jonas/.local/lib/python3.10/site-packages/backoff/_async.py", line 150, in retry
+    await _call_handlers(on_backoff, *details, wait=seconds)
+  File "/home/jonas/.local/lib/python3.10/site-packages/backoff/_async.py", line 34, in _call_handlers
+    await hdlr(details)
+  File "/home/jonas/.local/lib/python3.10/site-packages/pyoverkiz/client.py", line 74, in relogin
+    await invocation["args"][0].login()
+  File "/home/jonas/.local/lib/python3.10/site-packages/pyoverkiz/client.py", line 167, in login
+    await self.somfy_tahoma_get_access_token()
+  File "/home/jonas/.local/lib/python3.10/site-packages/pyoverkiz/client.py", line 222, in somfy_tahoma_get_access_token
+    raise SomfyBadCredentialsException(token["message"])
+pyoverkiz.exceptions.SomfyBadCredentialsException: error.invalid.grant
+2022-06-02 14:32:03 - INFO - Checking current weather conditions...
+2022-06-02 14:32:03 - INFO - Current weather conditions: {'wind_speed': 8.0, 'wind_gust_speed': 12.3}
+2022-06-02 14:32:03 - ERROR - Something while checking the awning went wrong
+Traceback (most recent call last):
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/main.py", line 81, in main
+    await close_awning_if_unsafe_wind(username,
+  File "/home/jonas/PycharmProjects/AwningSafetyMonitor/main.py", line 49, in close_awning_if_unsafe_wind
+    current_wind['wind_gust_speed'] > unsafe_wind_gust_speed) and awning_is_open:
+UnboundLocalError: local variable 'awning_is_open' referenced before assignment
+2022-06-02 14:33:01 - INFO - -------------------------- STARTING AWNING CHECK --------------------------
+2022-06-02 14:33:01 - INFO - Logging in to somfy...
+2022-06-02 14:33:02 - INFO - Login successful
+2022-06-02 14:33:02 - INFO - Checking awning current state...
+2022-06-02 14:33:02 - INFO - Awning is currently: closed
+2022-06-02 14:33:02 - INFO - Checking current weather conditions...
+2022-06-02 14:33:02 - INFO - Current weather conditions: {'wind_speed': 8.0, 'wind_gust_speed': 12.3}
+2022-06-02 14:33:02 - INFO - Did not close awning, wind is {'wind_speed': 8.0, 'wind_gust_speed': 12.3} and state of the awning is: closed
