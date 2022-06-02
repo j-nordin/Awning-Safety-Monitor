@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from pyoverkiz.const import SUPPORTED_SERVERS
 from pyoverkiz.models import Command
 
+import LoggingConfigurator
 import PushNotifications
 import WindFetcher
 from OverkizExtensions import OverkizClientExtension
@@ -15,20 +16,12 @@ def _load_env_variables():
     load_dotenv(dotenv_file)
 
 
-def _config_logging():
-    logfile = os.path.join(os.path.dirname(__file__), "logfile.log")
-    logging.basicConfig(filename=logfile,
-                        filemode="w", # a - append logs, w - rewrite logs
-                        format='%(asctime)s - %(levelname)s - %(message)s',
-                        datefmt='%Y-%m-%d %X',
-                        level=logging.INFO)
-
-
 async def close_awning_if_unsafe_wind(username,
                                       password,
                                       spa_awning_url,
                                       unsafe_wind_speed,
                                       unsafe_wind_gust_speed):
+    logging.info("-------------------------- STARTING AWNING CHECK --------------------------")
     async with OverkizClientExtension(username, password, server=SUPPORTED_SERVERS["somfy_europe"]) as client:
         try:
             logging.info("Logging in to somfy...")
@@ -79,7 +72,7 @@ async def close_awning_if_unsafe_wind(username,
 
 async def main() -> None:
     _load_env_variables()
-    _config_logging()
+    LoggingConfigurator.config_logging()
     username = os.environ["USERNAME"]
     password = os.environ["PASSWORD"]
     spa_awning_url = os.environ["SPA_AWNING_ID"]
