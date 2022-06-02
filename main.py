@@ -54,14 +54,14 @@ async def close_awning_if_unsafe_wind(username,
                                                   execution_mode='highPriority')
                 logging.info("Command to close awning successfully sent")
             except Exception:
-                PushNotifications.send_push_notification(title="Markis kunde inte fällas in",
-                                                         message="Kommando för att stänga markisen kunde inte skickas")
+                PushNotifications.send(title="Markis kunde inte fällas in",
+                                       message="Kommando för att stänga markisen kunde inte skickas")
                 logging.exception("Command to close awning could not be sent")
 
             try:
                 logging.info("Send push notification about closing the awning")
-                PushNotifications.send_push_notification(title="Markis fälls in",
-                                                         message=f"Markisen fälls in på grund av hård vind. Nuvarande vind: "
+                PushNotifications.send(title="Markis fälls in",
+                                       message=f"Markisen fälls in på grund av hård vind. Nuvarande vind: "
                                                                  f"{current_wind['wind_speed']} m/s ({current_wind['wind_gust_speed']} m/s)")
             except Exception:
                 logging.exception("Push notification about closing the awning could not be sent")
