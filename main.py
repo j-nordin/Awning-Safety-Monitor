@@ -83,7 +83,9 @@ async def main() -> None:
                                           spa_awning_url,
                                           unsafe_wind_speed=float(os.environ["UNSAFE_WIND_SPEED"]),
                                           unsafe_wind_gust_speed=float(os.environ["UNSAFE_WIND_GUST_SPEED"]))
-    except Exception:
+    except Exception as e:
+        PushNotifications.send(title="Markis kunde inte fällas in",
+                               message=f"Något gick fel när check för markisen kördes")
         logging.exception("Something while checking the awning went wrong")
 
 
