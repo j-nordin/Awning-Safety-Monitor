@@ -8,6 +8,5 @@ This is a script made to be run every X minutes (using for example cron-jobs) to
 - Push-notifications are managed by [Pushover](https://pushover.net/).
 - CronJobHandler uses the 'mail'-command which uses 'ssmtp' to send the output logs per mail
 
-## TODO: 
-- Create requirements.txt
-- Create webserver to disable check for 2h
+## TODO:
+- Create webserver to view logs and temporarily disable the safety script
